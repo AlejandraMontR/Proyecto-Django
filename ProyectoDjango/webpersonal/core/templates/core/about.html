@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" 
+            src="{% static 'core/img/ale_avatar.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Ale Montiel</h2>   
+        <p>Nací en Huamantla Tlaxcala, Tengo 24 años, mis hobbits favoritos son jugar basket, escuchar musica
+        Estudio en la Universidad Tecnológica de Tlaxcala
+        </p>
+    </div>
+</div>
+{% endblock %}
